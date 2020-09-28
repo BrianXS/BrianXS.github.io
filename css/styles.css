@@ -1,402 +1,103 @@
-.body {
-    font-family: 'Lexend Deca', sans-serif;
+body {
+    margin: 0;
+    background: #fff;
 }
 
-.container-fluid {
-    max-width: 1200px;
-    min-width: 420px;
-}
-
-.first-section {
-    padding-top: 10px;
-}
-
-.main-menu {
-    display: flex;
-    align-items: center;
+.container {
     justify-content: space-between;
-    padding: 0;
-}
-
-.main-menu li{
-    display: inline;
-    list-style-type: none;
-    font-family: 'Lexend Deca', sans-serif;
-    margin: 8px;
-}
-
-.main-menu li a {
-    text-decoration: none;
-}
-
-.main-menu div:first-child li {
-    float: left;
-    color: #ef5c49;
-    font-size: 35px;
-    font-weight: 900;
-}
-
-.main-menu div:last-child li a{
-    color: #242625
-}
-
-.main-menu div:first-child li a{
-    color: #ef5c49
-}
-
-.main-menu div:last-child li:last-child a{
-    background: #f9f5f2;
-    padding: 12px 22px;
-    border-radius: 5px;
-}
-
-.first-section .slogan {
-    padding-top: 60px;
-}
-
-.first-section .slogan p{
-    font-size: 18px;
-    text-align: center;
-    color: #ef5c49;
-    font-weight: 500;
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-.first-section .slogan h1{
-    font-size: 50px;
-    text-align: center;
-    color: #212524;
-    font-weight: 500;
-    font-family: font72558;
-    width: 50%;
+    max-width: 1441px;
+    padding-right: 5%;
+    padding-left: 5%;
     margin: 0 auto;
-    margin-bottom: 25px;
-}
-
-.first-section .slogan a {
-    background: #ef5c49;
-    font-size: 16px;
-    padding: 16px 20px;
-    color: white;
-    font-family: 'Lexend Deca', sans-serif;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    width: 167px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.card-line {
-    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
-    padding: 0 75px 0 75px !important;
 }
 
-.card-line .card {
-    width: 18rem;
-    height: 150px;
+.left-column {
+    width: 37%;
 }
 
-.card-line .card:first-child, .card-line .card:last-child {
-    margin-top: 30px;
+.left-column h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: #1eaa50;
 }
 
-.card-line .card {
-    border:1px solid #34807f73 !important;
-    box-shadow: 0px 0px 25px -12px #34807f;
-    transition: 0.5s;
-}
-
-.card-line .card:hover {
-    background: #34807f57;
-    transition: 0.5s;
-    margin-top: 10px;
-}
-
-.card-line .card:nth-child(2) {
-    border:1px solid rgba(239, 92, 73, 0.24) !important;
-    box-shadow: 0px 0px 25px -12px #ef5c498a;
-    transition: 0.5s;
-}
-
-.card-line .card:nth-child(2):hover {
-    background: #ef5c4938;
-    transition: 0.5s;
-    margin-top: -10px !important;
-}
-
-.card-title {
-    font-family: 'Lexend Deca', sans-serif;
-    color: #212524;
-    font-size: 19px;
-}
-
-.card-text {
-    font-family: 'Lexend Deca', sans-serif;
-    color: #21252bb8;
-    font-size: 16px;
-}
-
-
-.second-section {
-    margin-top: 50px;
-    padding-bottom: 70px;
-    padding-top: 20px;
-    background: #ef5c4930;
-    
-}
-
-.second-section .slogan {
-    padding: 70px;
-}
-
-.second-section .slogan h1 {
-    font-size: 40px;
-    text-align: center;
-    color: #212524;
+.left-column p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
     font-weight: 500;
-    font-family: font72558;
-    width: 50%;
-    margin: 0 auto;
-    text-transform: capitalize;
+    color: #464646;
+    margin-bottom: 35px;
 }
 
-.second-section .slogan p {
-    font-size: 16px;
-    text-align: center;
-    color: #212524;
-    font-family: 'Lexend Deca', sans-serif;
+.left-column .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
 }
 
-.second-section .features {
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    text-align: center;
-    line-height: 16px;
+
+.left-column .icons .email-icon,
+.left-column .icons .linkedin-icon, 
+.left-column .icons .github-icon {
+    width: 35px;
+    transition: 0.5s;
+    filter: grayscale(100%);
 }
 
-.second-section .features p {
-    margin-top: 10px;
+.left-column .icons .email-icon:hover,
+.left-column .icons .linkedin-icon:hover,
+.left-column .icons .github-icon:hover {
+    transition: 0.1s;
+    filter: grayscale(0%);
 }
 
-.third-section{
-    padding-top: 100px;
-    padding-bottom: 80px;
-    background: #f9f5f2;
+.right-column {
+    width: 59%;
+    padding-top: 30px;
 }
 
-.fourth-section {
-    padding: 0;
-    background: white;
-}
-
-.fourth-section a {
-    background: #f9f5f2 !important;
-}
-
-.fourth-section .col-lg-5 {
-    background: white;
-    padding-top: 20%;
-}
-
-.third-section ul {
-    display: inline-block;
-    padding: 20px;
-}
-
-.third-section ul:first-child {
-    margin-left: -20px;
-}
-
-.third-section ul li {
-    list-style-image: url("../img/tick-sign.svg");
-}
-
-.third-section p, .fourth-section p {
-    font-family: 'Lexend Deca', sans-serif;
-}
-.third-section p.orange-text, .fourth-section p.orange-text {
-    color: #ef5c49;
-    margin-bottom: 5px;
-    font-weight: 600;
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-.third-section h1, .fourth-section h1 {
-    font-family: font72558;
-    font-size: 40px;
-}
-
-.third-section a, .fourth-section a {
-    background: white;
-    padding: 16px 22px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #212524;
-    display: table;
-}
-
-.sixth-section {
-    padding-top: 20px;
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-.sixth-section div:last-child a{
-    text-decoration: none;
-    margin: 20px;
-}
-
-.fifth-section {
-    background: linear-gradient(#f9f5f2, #f9f5f2, #f9f5f2, transparent);
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
-
-.fifth-section h1 {
-    font-family: font72558;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.fifth-section a {
-    background: #ef5c49;
-    font-size: 16px;
-    padding: 14px 10px;
+.right-column .project-card {
+    background: #1eaa50;
     color: white;
-    font-family: 'Lexend Deca', sans-serif;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    width: 167px;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.1s;
+}
+
+.right-column .project-card:hover {
+    transition: 0.3s;
+    transform:scale(1.02);
+}
+
+.right-column .project-card .project-title {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.right-column .project-card .project-description {
+    width: 53%;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.right-column .project-card .project-button {
+    padding: 13px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    background: white;
+    color: #1eaa50;
+    border-radius: 6px;
     text-decoration: none;
-}
-
-
-@media (max-width: 1100px){
-    .card-line {
-        padding: 0 40px 0 40px !important;
-    }
-
-    .second-section .slogan h1 {
-        width: 65%
-    }
-}
-
-@media (max-width: 1000px){
-    .card-line {
-        padding: 0 30px 0 30px !important;
-    }
-
-    .card-line .card {
-        width: 16.5rem;
-    }
-
-    .card-line .card .card-title {
-        font-size: 18px;
-    }
-
-    .second-section .slogan h1 {
-        width: 80%
-    }
-}
-
-
-@media (max-width: 900px){
-
-    .first-section .slogan h1{
-        width: 70%;
-    }
-
-    .card-line {
-        padding: 0 10px 0 10px !important;
-    }
-
-    .card-line .card {
-        width: 15rem;
-        height: 170px;
-    }
-
-    .card-line .card .card-title {
-        font-size: 16px;
-    }
-
-    .card-line .card .card-body {
-        font-size: 15px;
-    }
-
-    .second-section .slogan {
-        padding: 50px 0 50px 0;
-    }
-
-    .second-section .slogan h1 {
-        width: 70%
-    }
-}
-
-@media (max-width: 800px){
-    .card-line {
-        padding: 0 20% 0 20% !important;
-        display: block;
-    }
-
-    .card-line .card {
-        margin: 0 auto;
-        width: 360px;
-        height: 125px;
-        margin-top: 20px;
-    }
-
-    .card-line .card:first-child, .card-line .card:last-child {
-        margin-top: 20px;
-    }
-
-    .card-line .card:nth-child(2):hover {
-        margin-top: 20px !important;
-    }
-
-    .second-section .slogan h1 {
-        width: 85%;
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 600px){
-    .card-line {
-        padding: 0 10% 0 10% !important;
-        display: block;
-    }
-
-    .card-line .card {
-        margin: 0 auto;
-        width: 360px;
-        height: 125px;
-        margin-top: 20px;
-    }
-
-    .card-line .card:first-child, .card-line .card:last-child {
-        margin-top: 20px;
-    }
-
-    .card-line .card:nth-child(2):hover {
-        margin-top: 20px !important;
-    }
-
-    .first-section .slogan h1{
-        width: 95%;
-    }
-
-    .second-section .slogan h1 {
-        width: 100%;
-    }
-
-    .second-section .slogan p {
-        width: 90%;
-        margin: 0 auto;
-    }
 }
